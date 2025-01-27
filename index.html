@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venu's DevOps Portfolio</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1e1e1e;
+            color: #fff;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            transition: all 0.5s ease;
+        }
+
+        /* Page Load Animation */
+        body {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Main Header Section */
+        header {
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            animation: headerFadeIn 1.5s ease-out;
+        }
+
+        header h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.8;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        @keyframes headerFadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Section Styling */
+        section {
+            padding: 70px 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        section#about {
+            background: #34495e;
+        }
+
+        section#skills {
+            background: #2c3e50;
+        }
+
+        section#contact {
+            background: #1abc9c;
+            transition: background 0.3s ease;
+        }
+
+        section h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: #e74c3c;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Skills Cards */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .skill {
+            background: #2980b9;
+            color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill:hover {
+            transform: translateY(-10px);
+            background-color: #3498db;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Contact Section */
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        /* Scroll Animations */
+        .fadeInOnScroll {
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInOnScroll 1s forwards;
+        }
+
+        @keyframes fadeInOnScroll {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Scroll Effects */
+        .scroll-section {
+            animation: scrollFadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes scrollFadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Venu's DevOps Portfolio</h1>
+    <p class="scroll-section">DevOps Engineer | AWS | Docker | Jenkins | GitHub | GitLab | Jira</p>
+</header>
+
+<section id="about" class="fadeInOnScroll">
+    <h2>About Me</h2>
+    <p>I'm Venu, a passionate DevOps Engineer who believes in automation, scalability, and efficiency. I work with AWS, Docker, Jenkins, GitHub, GitLab, and Jira to build reliable systems and pipelines.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+</section>
+
+<section id="skills" class="fadeInOnScroll">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="skill">AWS</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Jenkins</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">GitLab</div>
+        <div class="skill">Jira</div>
+    </div>
+</section>
+
+<section id="contact" class="fadeInOnScroll">
+    <h2>Contact Me</h2>
+    <p>Looking to collaborate? Reach out to me below for any project inquiries or questions!</p>
+    <p>Email: <a href="mailto:venuhkhsn@gmail.com">venuhkhsn@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Venu | All Rights Reserved</p>
+</footer>
+
+<script>
+    // Add the scroll effect for fade-in
+    const sections = document.querySelectorAll('.fadeInOnScroll');
+    const scrollSection = document.querySelectorAll('.scroll-section');
+    
+    const options = {
+        root: null,
+        threshold: 0.2,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scroll-section');
+            }
+        });
+    }, options);
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
+</script>
+
+</body>
+</html>
